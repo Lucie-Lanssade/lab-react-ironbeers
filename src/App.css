@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.homePage {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.homePage img {
+  width: 100%
+}
+
+.homeText {
+  padding: 1rem;
+  text-align: left;
+}
+
+.header {
+  background-color: dodgerblue;
+  height: 100px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header img {
+  width: 70px;
+  height: auto;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.beerCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid lightslategray;
+  padding: 1rem;
+}
+
+
+
+
+.beerCardText {
+  text-align: left;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 70px;
+}
+
+.grey {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: dimgray;
+}
+
+
+
+
+.detailsContainer {
+  padding: 3rem 1rem 3rem 1rem;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignLeft h3 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.singleTagline {
+  color: dimgray;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.alignLeft p {
+  font-weight: 600;
+}
+
+.alignRight {
+  text-align: Right;
+}
+
+.singleBeerContainer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
